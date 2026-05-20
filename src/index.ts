@@ -29,7 +29,6 @@ export default {
     }
 
     // GET MENU
-    console.log("Received request:", request.method, url.pathname);
     if (url.pathname === "/menu") {
       const data =
         await env.MENU_KV.get("menu");
